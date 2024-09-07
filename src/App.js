@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './components/Navbar';
+import data from "./python-data.json"
+import Card from './components/Card';
+import Filter from './components/Filter';
 
 function App() {
+  {console.log();
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Filter/>
+      {data.map((creator)=>{
+        console.log(creator);
+        
+        return(<Card name={creator.name} cover={creator.cover} contentType={creator.contentType} insta={creator.insta_link} fb={creator.fb_link} tiktok={creator.tt_link}/> )
+      })}
     </div>
   );
 }
