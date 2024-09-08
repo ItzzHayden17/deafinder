@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
+import { motion } from "framer-motion"
+
 const Card = (props) => {
 
     const [active,setActive] = useState(false)
@@ -10,8 +12,12 @@ const Card = (props) => {
         },8000)
     }
   return (
+    
     <div className='Card' onClick={handleSocials} onMouseEnter={handleSocials} onMouseLeave={() =>{setActive(false)}}>
-
+        <motion.div
+        initial={{opacity:0 , scale:0.9}}
+        animate={{ opacity: 1 ,scale:1}}
+        transition={{duration: 0.4 }}>
 
         <div className="header">{props.name}</div>
         <div className="img-container">
@@ -19,15 +25,22 @@ const Card = (props) => {
         </div>
         <div className="footer">{props.contentType}</div>
         {active? <>
+        <motion.div
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:0.4}}>
             <div className="socials">
             <div className="links">
                 {props.insta == undefined ? <></> : <a href={props.insta}><i class="bi bi-instagram"></i></a>}
                 {props.fb == undefined ? <></> : <a href={props.fb}><i class="bi bi-facebook"></i></a>}
                 {props.tiktok == undefined ? <></> : <a href={props.tiktok}><i class="bi bi-tiktok"></i></a>}
             </div>
-        </div>
+            </div>
+            </motion.div>
         </> : <></>}
+        </motion.div>
     </div>
+
   )
 }
 
