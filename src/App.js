@@ -1,17 +1,27 @@
 
 import './App.css';
 import Navbar from './components/Navbar';
-import data from "./python-data.json"
+import creatorsData from "./python-data.json"
 import Card from './components/Card';
 import Filter from './components/Filter';
+import { useState } from 'react';
 
 function App() {
-  {console.log();
+
+  const [data,setData] = useState(creatorsData)
+
+  function handleData(e){
+    if (e == null) {
+      setData(creatorsData)
+    }else{
+      setData(e)
+    }
+    
   }
   return (
     <div className="App">
       <Navbar />
-      <Filter/>
+      <Filter onChange={handleData}/>
       {data.map((creator)=>{
         console.log(creator);
         

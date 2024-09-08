@@ -11,6 +11,13 @@ const Card = (props) => {
     }
   return (
     <div className='Card' onClick={handleSocials} onMouseEnter={handleSocials} onMouseLeave={() =>{setActive(false)}}>
+
+
+        <div className="header">{props.name}</div>
+        <div className="img-container">
+        <img src={props.cover} alt=""  />
+        </div>
+        <div className="footer">{props.contentType}</div>
         {active? <>
             <div className="socials">
             <div className="links">
@@ -20,11 +27,6 @@ const Card = (props) => {
             </div>
         </div>
         </> : <></>}
-
-        <div className="header">{props.name}</div>
-        <img src={props.cover} alt=""  />
-        <div className="footer">{props.contentType}</div>
-
     </div>
   )
 }
