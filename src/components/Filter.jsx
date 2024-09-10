@@ -37,10 +37,12 @@ const Filter = (props) => {
     setFilterOptions(dataContentType)
   },[])
   return (
-    <div className='Filter'>
+    <div>
+      <div className="Filter">
       {filterOptions.map((option=>{
         return(<button onClick={handleChange} value={option}>{option}</button>)
       }))}
+      </div>
     </div>
   )
 }
