@@ -23,26 +23,24 @@ const Filter = (props) => {
 
   
   useEffect(()=>{
-    const dataContentType = []
-
+    const dataContentType = ["All","Entertainer",] //Custom keywords for search purposes
     data.forEach((option)=>{
-      if (dataContentType.includes(option.contentType)) {
-      }else{
-        dataContentType.push(option.contentType)
+      var string = "Researcher (Ghost)"
+      console.log(dataContentType.some(items => items.includes(string)));
+      if (!dataContentType.some(items => items.includes(option.contentType.split(" ")[0] || option.contentType.split(" ")[1]))) { //We use split to prevent duplication on the words
+        dataContentType.push(option.contentType.split(" ")[0])
       }
     })
 
+    
+    
     setFilterOptions(dataContentType)
   },[])
   return (
     <div className='Filter'>
-        
-        <select name="" id="" onChange={handleChange}>
-            <option value="All">All </option>
-            {filterOptions.map((option)=>{
-              return <option value={option}> {option}</option>
-            })}
-        </select>
+      {filterOptions.map((option=>{
+        return(<button onClick={handleChange} value={option}>{option}</button>)
+      }))}
     </div>
   )
 }
