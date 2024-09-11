@@ -35,7 +35,10 @@
   }
 
 }
-
+.card_container{
+  width: 80%;
+  margin: 0 auto;
+}
 .Card{
   background-color: #ffffff;
   display: inline-block;

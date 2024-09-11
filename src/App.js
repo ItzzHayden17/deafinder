@@ -25,15 +25,17 @@ function App() {
     <div className="App">
       <Navbar />
       <Filter onChange={handleData}/>
+      <div className='card_container'>
       {data.map((creator)=>{
         return(
           <>
-
+          
           <Card name={creator.name} cover={creator.cover} contentType={creator.contentType} insta={creator.insta_link} fb={creator.fb_link} tiktok={creator.tt_link}/>
-
+          
           </>
         )
       })}
+      </div>
       <Footer/>
     </div>
   );
