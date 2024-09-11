@@ -24,8 +24,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <div className='container'>
       <Filter onChange={handleData}/>
-      <div className='card_container'>
       {data.map((creator)=>{
         return(
           <>
