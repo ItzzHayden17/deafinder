@@ -1,50 +1,75 @@
-import React, { useEffect, useState } from 'react'
-import data from "../python-data.json"
+import React, { useEffect, useState, useMemo } from 'react';
+import data from '../python-data.json';
+
 const Filter = (props) => {
+  const [filterOptions, setFilterOptions] = useState([]);
+  const [filters, setFilters] = useState({ name: '', country: '', contentType: '' });
 
-  const [filterOptions,setFilterOptions] = useState([])
+  // Memoize the filteredData
+  var filteredData = useMemo(() => {
+    return data.filter((creator) => {
+      return (
+        (filters.contentType === "" || creator.contentType.includes(filters.contentType)) &&
+        (filters.country == "" || creator.country.toLowerCase().includes(filters.country.toLowerCase())) &&
+        (filters.name == "" ||
+          creator.name.toLowerCase().includes(filters.name.toLowerCase()))
 
-  function handleChange(e){
+      )
+    });
+  }, [data, filters]);
 
-    if (e.target.value == "All") {
-      props.onChange(null) 
-    }else{
-      const filteredData = []
+  props.onChange(filteredData)
 
-      data.forEach((creator)=>{
-        if (creator.contentType.includes(e.target.value)) {
-          filteredData.push(creator)
-        }
-        props.onChange(filteredData) //Passes the new filtered data to the App,to render the new cards
-      })
+  function handleFilter(e) {
+    e.preventDefault();
+    const { name, value } = e.target;
+    
+
+    if (value == "All") {
+      window.location.reload()
+    } else {
+      setFilters((prevFilters) => ({ ...prevFilters, [name]: value }));
     }
-
+    
   }
 
-  
-  useEffect(()=>{
-    const dataContentType = ["All","Entertainer",] //Custom keywords for search purposes
-    data.forEach((option)=>{
-      var string = "Researcher (Ghost)"
-      console.log(dataContentType.some(items => items.includes(string)));
-      if (!dataContentType.some(items => items.includes(option.contentType.split(" ")[0] || option.contentType.split(" ")[1]))) { //We use split to prevent duplication on the words
-        dataContentType.push(option.contentType.split(" ")[0])
+  useEffect(() => {
+    // Set content for categories
+    const dataContentType = ['All', 'Entertainer']; // Custom keywords for search purposes
+    data.forEach((option) => {
+      const string = 'Researcher (Ghost)';
+      if (!dataContentType.some((items) => items.includes(option.contentType.split(' ')[0] || option.contentType.split(' ')[1]))) {
+        // Use split to prevent duplication of words
+        dataContentType.push(option.contentType.split(' ')[0]);
       }
-    })
+    });
+    setFilterOptions(dataContentType);
+  }, []);
 
-    
-    
-    setFilterOptions(dataContentType)
-  },[])
   return (
     <div>
       <div className="Filter">
-      {filterOptions.map((option=>{
-        return(<button onClick={handleChange} value={option}>{option}</button>)
-      }))}
+        <div className="buttons">
+        {filterOptions.map((option) => (
+          <button onClick={handleFilter} value={option} name="contentType" key={option}>
+            #{option}
+          </button>
+        ))}
+        </div>
+        <div className="inputs">
+          <select name="contentType" id="" onChange={handleFilter} className='hidden'>
+          {filterOptions.map((option) => (
+          <option  value={option} name="contentType" key={option}>
+            #{option}
+          </option>
+        ))}
+          </select>
+        <input type="text" onChange={handleFilter} name='name' placeholder='Search for a name' />
+        <input type="text" onChange={handleFilter} name='country' placeholder='Search by country'/>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Filter
+export default Filter;

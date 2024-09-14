@@ -5,7 +5,7 @@ const Footer = () => {
 
   return (
     <div className='Footer'>
-        {year} - Deafinder
+        <p>{year} - Deafinder</p>
     </div>
   )
 }

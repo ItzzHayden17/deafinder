@@ -5,7 +5,6 @@ import creatorsData from "./python-data.json"
 import Card from './components/Card';
 import Filter from './components/Filter';
 import Footer from './components/Footer';
-import { motion } from "framer-motion"
 import { useState } from 'react';
 
 function App() {
@@ -13,12 +12,7 @@ function App() {
   const [data,setData] = useState(creatorsData)
 
   function handleData(e){
-    if (e == null) {
-      setData(creatorsData)
-    }else{
-      setData(e)
-    }
-    
+    setData(e)
   }
 
   return (
@@ -28,10 +22,8 @@ function App() {
       <Filter onChange={handleData}/>
       {data.map((creator)=>{
         return(
-          <>
-          
-          <Card name={creator.name} cover={creator.cover} contentType={creator.contentType} insta={creator.insta_link} fb={creator.fb_link} tiktok={creator.tt_link}/>
-          
+          <> 
+          <Card name={creator.name} cover={creator.cover} contentType={creator.contentType} insta={creator.insta_link} fb={creator.fb_link} tiktok={creator.tt_link} />
           </>
         )
       })}
