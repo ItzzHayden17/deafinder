@@ -171,14 +171,22 @@
     border: 1px solid;
   }
 
+  input:focus{
+    border: solid 2px #022E6B
+  }
+
+
   select{
     margin: 0 5px;
     padding: 10px;
     width: 100%;
     border-radius: 10px;
     border: 1px solid;
+    background-color: #ffffff;
   }
-
+  select:focus{
+    border: 1px solid#022E6B ;
+  }
   .hidden{
     display: none;
   }
@@ -209,6 +217,7 @@
     .inputs{
       flex-direction: column;
       align-items: center;
+
       input{
         margin: 5px 0;
       }
