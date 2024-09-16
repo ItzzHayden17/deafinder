@@ -3,7 +3,9 @@ import data from '../python-data.json';
 
 const Filter = (props) => {
   const [filterOptions, setFilterOptions] = useState([]);
+  const [countryFilterOptions, setcountryFilterOptions] = useState([]);
   const [filters, setFilters] = useState({ name: '', country: '', contentType: '' });
+  const [activeCategory,setActiveCategory] = useState()
 
   // Memoize the filteredData
   var filteredData = useMemo(() => {
@@ -23,27 +25,35 @@ const Filter = (props) => {
   function handleFilter(e) {
     e.preventDefault();
     const { name, value } = e.target;
-    
-
     if (value == "All") {
       window.location.reload()
     } else {
       setFilters((prevFilters) => ({ ...prevFilters, [name]: value }));
+      if(e.target.name == "contentType"){
+        setActiveCategory(e.target.value)
+        console.log(activeCategory);
+        
+      }
     }
-    
   }
 
   useEffect(() => {
     // Set content for categories
     const dataContentType = ['All', 'Entertainer']; // Custom keywords for search purposes
+    const dataCountry = []
     data.forEach((option) => {
-      const string = 'Researcher (Ghost)';
       if (!dataContentType.some((items) => items.includes(option.contentType.split(' ')[0] || option.contentType.split(' ')[1]))) {
         // Use split to prevent duplication of words
         dataContentType.push(option.contentType.split(' ')[0]);
       }
+      if (!dataCountry.some((items) => items.includes(option.country))) {
+        dataCountry.push(option.country);
+      }
     });
     setFilterOptions(dataContentType);
+    setcountryFilterOptions(dataCountry)
+
+    
   }, []);
 
   return (
@@ -51,8 +61,8 @@ const Filter = (props) => {
       <div className="Filter">
         <div className="buttons">
         {filterOptions.map((option) => (
-          <button onClick={handleFilter} value={option} name="contentType" key={option}>
-            #{option}
+          <button onClick={handleFilter} value={option} name="contentType" key={option} className={activeCategory == option ? "active" : ""}>
+            <span>#</span>{option}
           </button>
         ))}
         </div>
@@ -60,12 +70,17 @@ const Filter = (props) => {
           <select name="contentType" id="" onChange={handleFilter} className='hidden'>
           {filterOptions.map((option) => (
           <option  value={option} name="contentType" key={option}>
-            #{option}
+            {option}
           </option>
         ))}
           </select>
         <input type="text" onChange={handleFilter} name='name' placeholder='Search for a name' />
-        <input type="text" onChange={handleFilter} name='country' placeholder='Search by country'/>
+        <select name="country" id="" onChange={handleFilter}>
+        <option value="All" >All</option>
+          {countryFilterOptions.map((country)=>{
+            return(<option value={country} >{country}</option>)
+          })}
+        </select>
         </div>
       </div>
     </div>

@@ -135,11 +135,12 @@
 }
 
 .Filter{
+
   padding: 15px;
   
   .buttons{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
   }
   button{
     border-color: transparent;
@@ -147,6 +148,7 @@
     margin: 10px;
     padding: 5px;
     border-radius: 5px;
+
     }
 
   button:hover{
@@ -155,12 +157,18 @@
     transition: 0.2s ease-in;
   }
 
+  .active{
+    background-color: #022E6B;
+    scale: 1.1;
+    color: #ffffff;
+  }
+
   .inputs{
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     padding: 5px;
-
+    width: 80%;
   }
 
   input{
@@ -190,10 +198,10 @@
   .hidden{
     display: none;
   }
-
-  .shown{
-    display: block;
+  span{
+    color: #1758b4;
   }
+
 }
 
 .Footer{
@@ -214,6 +222,7 @@
     .hidden{
       display: block;
     }
+
     .inputs{
       flex-direction: column;
       align-items: center;
@@ -221,6 +230,10 @@
       input{
         margin: 5px 0;
       }
+
+    }
+    span{
+      display: none;
     }
   }
 
