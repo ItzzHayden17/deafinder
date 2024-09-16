@@ -31,15 +31,13 @@ const Filter = (props) => {
       setFilters((prevFilters) => ({ ...prevFilters, [name]: value }));
       if(e.target.name == "contentType"){
         setActiveCategory(e.target.value)
-        console.log(activeCategory);
-        
       }
     }
   }
 
   useEffect(() => {
     // Set content for categories
-    const dataContentType = ['All', 'Entertainer']; // Custom keywords for search purposes
+    const dataContentType = ['Entertainer']; // Custom keywords for search purposes
     const dataCountry = []
     data.forEach((option) => {
       if (!dataContentType.some((items) => items.includes(option.contentType.split(' ')[0] || option.contentType.split(' ')[1]))) {
@@ -60,6 +58,7 @@ const Filter = (props) => {
     <div>
       <div className="Filter">
         <div className="buttons">
+        <button onClick={handleFilter} value="" name="contentType" className={activeCategory == "" ? "active" : ""}><span>#</span> All</button>
         {filterOptions.map((option) => (
           <button onClick={handleFilter} value={option} name="contentType" key={option} className={activeCategory == option ? "active" : ""}>
             <span>#</span>{option}
@@ -76,7 +75,7 @@ const Filter = (props) => {
           </select>
         <input type="text" onChange={handleFilter} name='name' placeholder='Search for a name' />
         <select name="country" id="" onChange={handleFilter}>
-        <option value="All" >All</option>
+        <option value="" >All</option>
           {countryFilterOptions.map((country)=>{
             return(<option value={country} >{country}</option>)
           })}
