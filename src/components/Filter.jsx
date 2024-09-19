@@ -5,7 +5,7 @@ const Filter = (props) => {
   const [filterOptions, setFilterOptions] = useState([]);
   const [countryFilterOptions, setcountryFilterOptions] = useState([]);
   const [filters, setFilters] = useState({ name: '', country: '', contentType: '' });
-  const [activeCategory,setActiveCategory] = useState()
+  const [activeCategory,setActiveCategory] = useState("All")
 
   // Memoize the filteredData
   var filteredData = useMemo(() => {
@@ -28,6 +28,8 @@ const Filter = (props) => {
       setFilters((prevFilters) => ({ ...prevFilters, [name]: value }));
       if(e.target.name == "contentType"){
         setActiveCategory(e.target.value)
+        console.log(activeCategory);
+        
       }
     
   }
@@ -55,7 +57,7 @@ const Filter = (props) => {
     <div>
       <div className="Filter">
         <div className="buttons">
-        <button onClick={handleFilter} value="" name="contentType" className={activeCategory == "" ? "active" : ""}><span>#</span> All</button>
+        <button onClick={handleFilter} value="" name="contentType" className={activeCategory ==  "" || activeCategory ==  "All"  ? "active" : ""}><span>#</span> All</button>
         {filterOptions.map((option) => (
           <button onClick={handleFilter} value={option} name="contentType" key={option} className={activeCategory == option ? "active" : ""}>
             <span>#</span>{option}
