@@ -25,14 +25,11 @@ const Filter = (props) => {
   function handleFilter(e) {
     e.preventDefault();
     const { name, value } = e.target;
-    if (value == "All") {
-      window.location.reload()
-    } else {
       setFilters((prevFilters) => ({ ...prevFilters, [name]: value }));
       if(e.target.name == "contentType"){
         setActiveCategory(e.target.value)
       }
-    }
+    
   }
 
   useEffect(() => {
@@ -67,15 +64,16 @@ const Filter = (props) => {
         </div>
         <div className="inputs">
           <select name="contentType" id="" onChange={handleFilter} className='hidden'>
+          <option  value="" name="contentType" >All Categories</option>
           {filterOptions.map((option) => (
           <option  value={option} name="contentType" key={option}>
             {option}
           </option>
         ))}
           </select>
-        <input type="text" onChange={handleFilter} name='name' placeholder='Search for a name' />
+        <input type="text" onChange={handleFilter} name='name' placeholder='  Search name' />
         <select name="country" id="" onChange={handleFilter}>
-        <option value="" >All</option>
+        <option value="" >All Locations</option>
           {countryFilterOptions.map((country)=>{
             return(<option value={country} >{country}</option>)
           })}
