@@ -28,7 +28,7 @@ const Card = (props) => {
         <div className="img-container">
         <img src={props.cover} alt=""  />
         </div>
-        <div className="footer">{props.contentType} {props.favorite ? <i id={props.id} class="bi bi-balloon-heart-fill" onClick={handleFavorite}></i> : <i id={props.id} class="bi bi-balloon-heart" onClick={handleFavorite}></i>}
+        <div className="footer">{props.contentType} {props.favorite ? <i id={props.id} className="bi bi-balloon-heart-fill" onClick={handleFavorite}></i> : <i id={props.id} className="bi bi-balloon-heart" onClick={handleFavorite}></i>}
         </div>
         {active? <>
         <motion.div

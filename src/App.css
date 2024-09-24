@@ -4,7 +4,21 @@
   background-color: #f4f4f4;
   min-height: 100vh;
   max-height: 100%;
+
 }
+
+.add{
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #1758b4;
+  background-color: #ffffff;
+  color: #1758b4;
+  z-index: 1;
+}
+
 .Navbar{
   background-color: #022E6B;
   display: flex;
@@ -219,6 +233,14 @@
   color: #022E6B;
 }
 @media screen and (max-width:1000px) {
+  .Navbar{
+    button{
+      margin: 4px;
+    }
+    img{
+      margin: 0;
+    }
+  }
   .Card{
     display: block;
     margin: 10px auto;
@@ -250,5 +272,6 @@
       display: none;
     }
   }
+
 
 }

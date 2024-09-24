@@ -10,6 +10,8 @@ function App() {
     const [data, setData] = useState(creatorsData);
     const [favoriteArray, setFavoriteArray] = useState([]);
     const [prompt, promptToInstall] = useAddToHomescreenPrompt();
+    const [isAppInstalled, setIsAppInstalled] = useState(false);
+
     function handleData(e) {
         setData(e);
     }
@@ -30,46 +32,24 @@ function App() {
         if (Cookies.get('favArray')) {
             setFavoriteArray(JSON.parse(Cookies.get('favArray')));
         }
+        if (window.matchMedia('(display-mode: standalone)').matches) { 
+          setIsAppInstalled(true) 
+      }
     }, []); // Empty dependency array ensures this effect runs only once on initial render
 
-
-    const [isAppInstalled, setIsAppInstalled] = useState(false);
-
-    useEffect(() => {
-      isPWAInstalled();
-    }, []);
-  
-    const isPWAInstalled = async () => {
-      if ("getInstalledRelatedApps" in window.navigator) {
-        const relatedApps = await navigator.getInstalledRelatedApps();
-        let installed = false;
-        relatedApps.forEach((app) => {
-          //if your PWA exists in the array it is installed
-          console.log(app.platform, app.url);
-          if (
-            app.url ===
-            "http://localhost:3000/manifest.json"
-          ) {
-            installed = true;
-          }
-        });
-        setIsAppInstalled(installed);
-      }
-    };
+    
 
     return (
         <div className="App">
-                  {!isAppInstalled ? (
-          <button onClick={promptToInstall}>Add to Home Screen</button>
-        ) : (
-          <div>Thanks for installing our app</div>
-        )}
+        {!isAppInstalled ? (
+          <button onClick={promptToInstall} className='add'>Add to Home Screen</button>
+        ) : <></>}
             <Navbar />
             <div className="container">
                 <Filter onChange={handleData} />
                 {data.map((creator) => (
                     <Card
-                        key={creator.id} // Don't forget to add a unique key!
+                        key={creator.id}
                         id={creator.id}
                         name={creator.name}
                         cover={creator.cover}

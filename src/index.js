@@ -5,6 +5,7 @@ import App from './App';
 import Favorite from './pages/Favorite';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { register } from './serviceWorker';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

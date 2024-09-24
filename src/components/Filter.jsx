@@ -28,8 +28,6 @@ const Filter = (props) => {
       setFilters((prevFilters) => ({ ...prevFilters, [name]: value }));
       if(e.target.name == "contentType"){
         setActiveCategory(e.target.value)
-        console.log(activeCategory);
-        
       }
     
   }
@@ -77,7 +75,7 @@ const Filter = (props) => {
         <select name="country" id="" onChange={handleFilter}>
         <option value="" >All Locations</option>
           {countryFilterOptions.map((country)=>{
-            return(<option value={country} >{country}</option>)
+            return(<option key={country} value={country} >{country}</option>)
           })}
         </select>
         </div>

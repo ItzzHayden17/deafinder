@@ -6,6 +6,7 @@ export function useAddToHomescreenPrompt() {
     const promptToInstall = () => {
         if (prompt) {
             return prompt.prompt();
+
         }
         return Promise.reject(
             new Error('Tried installing before browser sent "beforeinstallprompt" event')
@@ -16,8 +17,6 @@ export function useAddToHomescreenPrompt() {
         const handleBeforeInstallPrompt = (e) => {
             e.preventDefault();
             setPrompt(e);
-            console.log(e);
-            
         };
 
         window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
