@@ -11,6 +11,11 @@ const Card = (props) => {
             setActive(false)
         },8000)
     }
+
+    function handleFavorite(e){
+        props.onClick(e.target.id)
+        
+    }
   return (
     
     <div className='Card' onClick={handleSocials} onMouseEnter={handleSocials} onMouseLeave={() =>{setActive(false)}}>
@@ -23,7 +28,8 @@ const Card = (props) => {
         <div className="img-container">
         <img src={props.cover} alt=""  />
         </div>
-        <div className="footer">{props.contentType}</div>
+        <div className="footer">{props.contentType} {props.favorite ? <i id={props.id} class="bi bi-balloon-heart-fill" onClick={handleFavorite}></i> : <i id={props.id} class="bi bi-balloon-heart" onClick={handleFavorite}></i>}
+        </div>
         {active? <>
         <motion.div
         initial={{opacity:0}}
