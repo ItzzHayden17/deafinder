@@ -1,9 +1,13 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const DonateButtonContainer = () => {
+const DonateButtonContainer = (props) => {
+    function handleClose(){
+        props.onClick(false)
+    }
   return (
     <div className='DonateButtonContainer'>
+        <span onClick={handleClose}>x</span>
     <motion.div
     initial={{opacity:0 , scale:1.3}}
     animate={{ opacity: 1 ,scale:1}}

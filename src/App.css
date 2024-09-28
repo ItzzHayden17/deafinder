@@ -245,6 +245,16 @@
   background-color: #ffffff;
   border-radius: 10px;
 
+  span{
+    display: flex;
+    color: #022E6B;
+    font-weight: 600;
+    cursor: pointer;
+    justify-content: flex-end;
+    font-size: 25px;
+    line-height: 0;
+    margin: 5px 0 20px;
+  }
   .buttons{
     display: flex;
     flex-direction: column; 

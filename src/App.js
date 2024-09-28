@@ -46,7 +46,7 @@ function App() {
     return (
         <div className="App">
 
-        {donateState ? <DonateButtonContainer/> : <></>}
+        {donateState ? <DonateButtonContainer onClick={(e)=>{setDonateState(e)}}/> : <></>}
         
         {!isAppInstalled ? (
           <button onClick={promptToInstall} className='add'>Add to Home Screen</button>
