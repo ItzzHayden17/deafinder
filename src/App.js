@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
+import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Card from './components/Card';
 import Filter from './components/Filter';
 import Footer from './components/Footer';
 import creatorsData from './python-data.json'; // Assuming this is the correct path
 import { useAddToHomescreenPrompt } from './components/addToHomeScreen';
+import DonateButtonContainer from './components/DonateButtonContainer';
+
 function App() {
     const [data, setData] = useState(creatorsData);
     const [favoriteArray, setFavoriteArray] = useState([]);
     const [prompt, promptToInstall] = useAddToHomescreenPrompt();
     const [isAppInstalled, setIsAppInstalled] = useState(false);
+    const [donateState,setDonateState] = useState(false)
 
     function handleData(e) {
         setData(e);
@@ -41,10 +45,13 @@ function App() {
 
     return (
         <div className="App">
+
+        {donateState ? <DonateButtonContainer/> : <></>}
+        
         {!isAppInstalled ? (
           <button onClick={promptToInstall} className='add'>Add to Home Screen</button>
         ) : <></>}
-            <Navbar />
+            <Navbar onClick={(e)=>{setDonateState(e)}} />
             <div className="container">
                 <Filter onChange={handleData} />
                 {data.map((creator) => (

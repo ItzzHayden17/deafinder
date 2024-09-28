@@ -232,6 +232,53 @@
   padding: 10px 0;
   color: #022E6B;
 }
+
+.DonateButtonContainer{
+  position: absolute;
+  padding: 20px;
+  width: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: solid 1px;
+  z-index: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  .buttons{
+    display: flex;
+    flex-direction: column; 
+    padding: 5px;
+  }
+
+  a{
+    all: unset;
+    margin: 5px;
+  }
+
+  .paypal{
+    border: solid 1px #022E6B;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 100%;
+
+    i{
+      color: #022E6B;
+    }
+
+  }
+  .paypal:hover{
+    background-color: #022E6B;
+    color: #ffffff;
+
+    i{
+      color: #ffffff ;
+    }
+  }
+
+}
 @media screen and (max-width:1000px) {
   .Navbar{
     button{
