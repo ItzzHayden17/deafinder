@@ -7,6 +7,7 @@ import creatorsData from "../python-data.json"
 const Favorite = () => {
 
     const [favoriteArray,setFavoriteArray] =useState([])
+    const [donateState,setDonateState] = useState(false)
 
     function handleFavorite(e){
         const id = Number(e)
@@ -32,7 +33,7 @@ const Favorite = () => {
     },[])
   return (
     <div className='App'>
-        <Navbar/>
+        <Navbar />
         <div className="container">
         {creatorsData.map((creator)=>{
             const isFavorite = favoriteArray.some((id) => id === creator.id)

@@ -2,6 +2,7 @@ import "../App.css"
 import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import { useLocation } from "react-router-dom"
+import DonateButtonContainer from "./DonateButtonContainer"
 
 const Navbar = (props) => {
   const location = useLocation().pathname
@@ -13,9 +14,10 @@ const Navbar = (props) => {
       setDonateState(true)
     }
 
-    props.onClick(donateState)
+   
   }
   return (
+    <div>
     <div className='Navbar'>
         <img src="/deafinder.png" alt="" width="200px" />
         <div className="buttons">
@@ -23,7 +25,10 @@ const Navbar = (props) => {
         <button onClick={handleDonateButton}>Donate</button>
         {location == "/favorite" ? <Link to="/"><button>Home</button></Link> : <Link to="/favorite"><button>Favorites</button></Link> }
         </div>
+    </div>      
+    {donateState ? <DonateButtonContainer onClick={(e)=>{setDonateState(e)}}/> : <></>}
     </div>
+
   )
 }
 

@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import creatorsData from './python-data.json'; // Assuming this is the correct path
 import { useAddToHomescreenPrompt } from './components/addToHomeScreen';
 import DonateButtonContainer from './components/DonateButtonContainer';
+import {isMobile} from 'react-device-detect';
 
 function App() {
     const [data, setData] = useState(creatorsData);
@@ -46,12 +47,12 @@ function App() {
     return (
         <div className="App">
 
-        {donateState ? <DonateButtonContainer onClick={(e)=>{setDonateState(e)}}/> : <></>}
+        
         
         {!isAppInstalled ? (
-          <button onClick={promptToInstall} className='add'>Add to Home Screen</button>
+          <button onClick={promptToInstall} className='add'>{isMobile ? <>Add to Home Screen</>:<>Add to Desktop</>}</button>
         ) : <></>}
-            <Navbar onClick={(e)=>{setDonateState(e)}} />
+            <Navbar/>
             <div className="container">
                 <Filter onChange={handleData} />
                 {data.map((creator) => (

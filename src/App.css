@@ -9,7 +9,7 @@
 
 .add{
   position: fixed;
-  bottom: 15px;
+  bottom: 50px;
   right: 20px;
   padding: 10px;
   border-radius: 10px;
@@ -265,7 +265,13 @@
     all: unset;
     margin: 5px;
   }
-
+  .card{
+    cursor: pointer;
+    img:hover{
+      transition: 0.2s;
+      transform: scale(1.05);
+    }
+  }
   .paypal{
     border: solid 1px #022E6B;
     border-radius: 10px;
@@ -273,7 +279,7 @@
     padding: 10px 0;
     margin: 0 auto;
     width: 100%;
-
+    transition: 0.4s;
     i{
       color: #022E6B;
     }
@@ -282,6 +288,7 @@
   .paypal:hover{
     background-color: #022E6B;
     color: #ffffff;
+    scale: 1.05;
 
     i{
       color: #ffffff ;
