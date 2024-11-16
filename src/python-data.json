@@ -4,7 +4,7 @@
     "name": "Biatta Murk",
     "insta_link": "https://www.instagram.com/fadbiamurk",
     "fb_link": "https://www.facebook.com/biatta.furmanskaya",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/08/Biatta-Murk-pic-scaled.jpeg",
+    "cover": "/images/Spirituality/Biatta-Murk-pic.jpeg",
     "contentType": "Spirituality",
     "country": "Switzerland"
   },
@@ -12,7 +12,7 @@
     "id":1,
     "name": "Dripple",
     "insta_link": "https://www.instagram.com/dripple.me",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/08/dripple-pic.jpeg",
+    "cover": "/images/Organization/dripple-pic.jpeg",
     "contentType": "Organization",
     "country": "America"
   },
@@ -20,7 +20,7 @@
     "id":2,
     "name": "Jianhua Yang",
     "insta_link": "https://www.instagram.com/huagui1115",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/08/Jianhua-Yang-pic.jpeg",
+    "cover": "/images/Artists/Jianhua-Yang-pic.jpeg",
     "contentType": "Artist (VV)",
     "country": "China"
   },
@@ -28,7 +28,7 @@
     "id":3,
     "name": "Cristian Gimenez",
     "insta_link": "https://www.instagram.com/cristianrgimenez_ovni1990",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/08/cristian-gimenez-pic-scaled.jpeg",
+    "cover": "/images/Researchers/cristian-gimenez-pic.jpeg",
     "contentType": "Researcher (UFO)",
     "country": "Spanish"
   },
@@ -36,7 +36,7 @@
     "id":4,
     "name": "Vla Wot",
     "insta_link": "https://www.instagram.com/vla_wot",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/08/vla-wot-pic-scaled.jpeg",
+    "cover": "/images/Researchers/vla-wot-pic.jpeg",
     "contentType": "Researcher (Science)",
     "country": "Switzerland"
     
@@ -45,7 +45,7 @@
     "id":5,
     "name": "Deaf Clubhouse",
     "insta_link": "https://www.instagram.com/deafclubhouse",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/08/deaf-clubhouse-pic-1.jpeg",
+    "cover": "/images/Engagement/deaf-clubhouse-pic.jpeg",
     "contentType": "Engagement",
     "country": "Switzerland"
   },
@@ -54,7 +54,7 @@
     "name": "Laura Levita",
     "fb_link": "https://www.facebook.com/lauralevita",
     "insta_link": "https://www.instagram.com/llevita",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/07/laura-levita-pic-scaled.jpeg",
+    "cover": "/images/Bloggers/laura-levita-pic.jpeg",
     "contentType": "Blogger | Travel",
     "country": "Germany"
   },
@@ -62,7 +62,7 @@
     "id":7,
     "name": "Hulusi Bati",
     "insta_link": "https://www.instagram.com/hulusibati",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/07/hulusi-bati-pic-scaled.jpeg",
+    "cover": "/images/Bloggers/hulusi-bati-pic.jpeg",
     "contentType": "Blogger",
     "country": "England"
   },
@@ -71,7 +71,7 @@
     "name": "Nico DiMarco",
     "fb_link": "https://www.facebook.com/DJNicoDiMarco",
     "insta_link": "https://www.instagram.com/nicodimarco3",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/08/nico-dimarco-pic-1.jpeg",
+    "cover": "/images/Artists/nico-dimarco-pic.jpeg",
     "contentType": "Artist (DJ)",
     "country": "America"
   },
@@ -80,7 +80,7 @@
     "name": "Jason Hoang",
     "fb_link": "https://www.facebook.com/JasonHoangFit",
     "insta_link": "https://www.instagram.com/jasonhoangfit",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/07/jason-hoang-pic.jpg",
+    "cover": "/images/Health/jason-hoang-pic.jpg",
     "contentType": "Health (Fitness)",
     "country": "America"
   },
@@ -89,7 +89,7 @@
     "name": "Renca Dunn",
     "insta_link": "https://www.instagram.com/reallyrenca",
     "tt_link": "https://www.tiktok.com/@reallyrenca",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/08/renca-dunn-pic-scaled.jpeg",
+    "cover": "/images/Comedy/renca-dunn-pic.jpeg",
     "contentType": "Entertainer (Comedy)",
     "country": "America"
   },
@@ -98,7 +98,7 @@
     "name": "Mav William",
     "fb_link": "https://www.facebook.com/wizardscientist7",
     "insta_link": "https://www.instagram.com/wizardscientist7",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/07/mavrick-william-pic.jpeg",
+    "cover": "/images/Bloggers/mavrick-william-pic.jpeg",
     "contentType": "Entertainer | Travel",
     "country": "Mexico"
   },
@@ -107,7 +107,7 @@
     "name": "Nyle DiMarco",
     "fb_link": "https://www.facebook.com/NyleDiMarco",
     "insta_link": "https://www.instagram.com/nyledimarco",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/08/nyle-dimarco-pic.jpeg",
+    "cover": "/images/Entertainers/nyle-dimarco-pic.jpeg",
     "contentType": "Entertainer (Actor) | Influencer",
     "country": "America"
   },
@@ -116,7 +116,7 @@
     "name": "Jenene Johnson",
     "fb_link": "https://www.facebook.com/jenene.johnson",
     "insta_link": "https://www.instagram.com/jeneneruns",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/07/jenene-johnson-pic-scaled.jpeg",
+    "cover": "/images/Education/jenene-johnson-pic.jpeg",
     "contentType": "Education | Influencer",
     "country": "America"
   },
@@ -125,7 +125,7 @@
     "name": "John Maucere",
     "fb_link": "https://www.facebook.com/thejohnmaucere",
     "insta_link": "https://www.instagram.com/johnmaucere",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/07/john-maucere-pic-e1722231101885.jpeg",
+    "cover": "/images/Comedy/john-maucere-pic.jpeg",
     "contentType": "Entertainer (Comedy)",
     "country": "America"
   },
@@ -134,7 +134,7 @@
     "name": "The Maloes Show",
     "fb_link": "https://www.facebook.com/THEMALOESSHOWFCBK",
     "insta_link": "https://www.instagram.com/themaloesshow",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/07/themaloesshow-pic.jpg",
+    "cover": "/images/Comedy/themaloesshow-pic.jpg",
     "contentType": "Entertainer (Comedy)",
     "country": "America"
   },
@@ -143,7 +143,7 @@
     "name": "Sonia Tedjani",
     "fb_link": "https://www.facebook.com/sonia.tedjani",
     "insta_link": "https://www.instagram.com/tyka11",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/07/sonia-tedjani-pic-e1722233724311.jpeg",
+    "cover": "/images/Spirituality/sonia-tedjani-pic.jpeg",
     "contentType": "Spirituality",
     "country": "Algeria"
   },
@@ -152,7 +152,7 @@
     "name": "Rach, Lovely Red",
     "fb_link": "https://www.facebook.com/suchalovelyred",
     "insta_link": "https://www.instagram.com/suchalovelyred",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/07/rach-red-pic-scaled.jpeg",
+    "cover": "/images/Influencers/rach-red-pic.jpeg",
     "contentType": "Influencer",
     "country": "America"
   },
@@ -161,7 +161,7 @@
     "name": "Imane Lachis",
     "fb_link": "https://www.facebook.com/imanelachis",
     "insta_link": "https://www.instagram.com/imanelachis",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/07/imane-lachis-pic.jpeg",
+    "cover": "/images/Entertainers/imane-lachis-pic.jpeg",
     "contentType": "Entertainer | Travel",
     "country": "Italy"
   },
@@ -170,7 +170,7 @@
     "name": "Maristella Li Puma",
     "fb_link": "https://www.facebook.com/maristella.lipuma",
     "insta_link": "https://www.instagram.com/mslipuma/",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/07/maristella-li-puma-pic.jpeg",
+    "cover": "/images/Entertainers/maristella-li-puma-pic.jpeg",
     "contentType": "Entertainer | Marketing",
     "country": "Italy"
   },
@@ -179,7 +179,7 @@
     "name": "Piero Anselmo",
     "fb_link": "https://www.facebook.com/piero.anselmo67",
     "insta_link": "https://www.instagram.com/pieroanselmo/",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/07/piero-anselmo-pic-1.jpeg",
+    "cover": "/images/Researchers/piero-anselmo-pic.jpeg",
     "contentType": "Researcher (UFO)",
     "country": "Italy"
   },
@@ -189,7 +189,7 @@
     "fb_link": "https://www.facebook.com/deafiesindrag",
     "insta_link": "https://www.instagram.com/deafiesindrag/",
     "tt_link": "https://www.tiktok.com/@deafiesindrag",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/07/deafies-in-drag.jpg",
+    "cover": "/images/Comedy/deafies-in-drag.jpg",
     "contentType": "Entertainer (Comedy)",
     "country": "America"
   },
@@ -197,7 +197,7 @@
     "id":22,
     "name": "Erin",
     "insta_link": "https://www.instagram.com/erinfollowsjesus",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/07/erin-follow-jesus-pic-scaled-e1722195847530.jpeg",
+    "cover": "/images/Religion/erin-follow-jesus-pic.jpeg",
     "contentType": "Religion",
     "country": "America"
   },
@@ -206,7 +206,7 @@
     "name": "Numan_tv",
     "fb_link": "https://www.facebook.com/NumanTV1",
     "insta_link": "https://www.instagram.com/numan_tv",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/07/numan-tv-pic.jpg",
+    "cover": "/images/Entertainers/numan-tv-pic.jpg",
     "contentType": "Entertainer",
     "country": "America"
   },
@@ -215,7 +215,7 @@
     "name": "Oden Ghost",
     "fb_link": "https://www.facebook.com/oden.ghost",
     "insta_link": "https://www.instagram.com/oden_ghost",
-    "cover": "https://deafzworld.com/wp-content/uploads/2024/07/oden-ghost-pic.jpeg",
+    "cover": "/images/Researchers/oden-ghost-pic.jpeg",
     "contentType": "Researcher (Ghost)",
     "country": "America"
   }
