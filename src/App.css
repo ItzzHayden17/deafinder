@@ -82,7 +82,7 @@
 
   .header{
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 5px 20px;
   }
   .footer{
@@ -112,16 +112,18 @@
 
   a{
     all: unset;
-    cursor: pointer;
   }
 
-  .bi{
+  .bi {
     font-size: 20px;
+    display: inline-block;
+    transition: transform 0.2s;
+    
   }
-
-  .bi:hover{
-    font-size: 24px;
-    transition: 0.5;
+  
+  .bi:hover {
+    transform: scale(1.2);
+    cursor: pointer;
   }
   .bi-facebook{
     color: blue;
@@ -133,6 +135,9 @@
 
   .bi-tiktok{
     color: black;
+  }
+  .bi-youtube{
+    color: #ff0000;
   }
   .links{
     display: flex;
@@ -157,11 +162,11 @@
 }
 
 .Filter{
-
   padding: 15px;
   
   .buttons{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
   button{

@@ -40,6 +40,7 @@ const Card = (props) => {
                 {props.insta == undefined ? <></> : <a href={props.insta}><i class="bi bi-instagram"></i></a>}
                 {props.fb == undefined ? <></> : <a href={props.fb}><i class="bi bi-facebook"></i></a>}
                 {props.tiktok == undefined ? <></> : <a href={props.tiktok}><i class="bi bi-tiktok"></i></a>}
+                {props.youtube == undefined ? <></> : <a href={props.youtube}><i class="bi bi-youtube"></i></a>}
             </div>
             </div>
             </motion.div>

@@ -65,6 +65,7 @@ function App() {
                         insta={creator.insta_link}
                         fb={creator.fb_link}
                         tiktok={creator.tt_link}
+                        youtube={creator.yt_link}
                         favorite={favoriteArray.some((id) => creator.id === id)}
                         onClick={handleFavorite}
                     />

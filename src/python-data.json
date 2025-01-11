@@ -16,14 +16,6 @@
     "contentType": "Organization",
     "country": "America"
   },
-{
-    "id":2,
-    "name": "Jianhua Yang",
-    "insta_link": "https://www.instagram.com/huagui1115",
-    "cover": "/images/Artists/Jianhua-Yang-pic.jpeg",
-    "contentType": "Artist (VV)",
-    "country": "China"
-  },
   {
     "id":3,
     "name": "Cristian Gimenez",
@@ -57,14 +49,6 @@
     "cover": "/images/Bloggers/laura-levita-pic.jpeg",
     "contentType": "Blogger | Travel",
     "country": "Germany"
-  },
-  {
-    "id":7,
-    "name": "Hulusi Bati",
-    "insta_link": "https://www.instagram.com/hulusibati",
-    "cover": "/images/Bloggers/hulusi-bati-pic.jpeg",
-    "contentType": "Blogger",
-    "country": "England"
   },
   {
     "id":8,
@@ -218,5 +202,303 @@
     "cover": "/images/Researchers/oden-ghost-pic.jpeg",
     "contentType": "Researcher (Ghost)",
     "country": "America"
-  }
+  },
+    {
+      "id": 26,
+      "name": "Melissa Elmira",
+      "insta_link": "https://www.instagram.com/melmira",
+      "yt_link": "https://www.youtube.com/@melmira",
+      "cover": "/images/Entertainers/Melissa Elmira.png",
+      "contentType": "Entertainer",
+      "country": "America"
+    },
+    {
+      "id": 27,
+      "name": "Brett Shaffer",
+      "insta_link": "https://www.instagram.com/itsbrettshaffer",
+      "fb_link": "https://www.facebook.com/itsbrettshaffer",
+      "cover": "/images/Entertainers/Brett Shaffer (Comedy).png",
+      "contentType": "Entertainer",
+      "country": "America"
+    },
+    {
+      "id": 28,
+      "name": "Jianhua Yang",
+      "insta_link": "https://www.instagram.com/huagui1115",
+      "cover": "/images/Entertainers/Jianhua Yang UPDATE.png",
+      "contentType": "Entertainer",
+      "country": "China"
+    },
+    {
+      "id": 29,
+      "name": "Baran Gurzoglu",
+      "insta_link": "https://www.instagram.com/barannnck",
+      "tiktok_link": "https://www.tiktok.com/@barannnck",
+      "cover": "/images/Entertainers/Baran Gurzoglu (Comedy and Influencer) copy.png",
+      "contentType": "Entertainer",
+      "country": "Turkey"
+    },
+    {
+      "id": 30,
+      "name": "Payaso Sordo",
+      "insta_link": "https://www.instagram.com/payaso_sordo/",
+      "fb_link": "https://www.facebook.com/elpayaso.sordo/",
+      "cover": "/images/Entertainers/Payaso Sordo (Actor).png",
+      "contentType": "Entertainer",
+      "country": "Mexico"
+    },
+    {
+      "id": 31,
+      "name": "Erwan (VV)",
+      "insta_link": "https://www.instagram.com/erwan.vv/",
+      "cover": "/images/Entertainers/Erwan (VV).png",
+      "contentType": "Entertainer",
+      "country": "France"
+    },
+    {
+      "id": 32,
+      "name": "Sébastien Ianno",
+      "insta_link": "https://www.instagram.com/art.sebi",
+      "cover": "/images/Entertainers/Sébastien Ianno (Artist).png",
+      "contentType": "Artist",
+      "country": "France"
+    },
+    {
+      "id": 33,
+      "name": "Savannah Dahan",
+      "insta_link": "https://www.instagram.com/savvyasl",
+      "yt_link": "https://www.youtube.com/c/SavvyASL",
+      "fb_link": "https://www.facebook.com/SavvyASL/",
+      "cover": "/images/Entertainers/Savannah Dahan (Public Figure).png",
+      "contentType": "Public Figure",
+      "country": "America"
+    },
+    {
+      "id": 34,
+      "name": "Sergej Abzagh",
+      "insta_link": "https://www.instagram.com/sery_star",
+      "cover": "/images/Entertainers/Sergej Abzagh.png",
+      "contentType": "Entertainer",
+      "country": "Germany"
+    },
+    {
+      "id": 35,
+      "name": "Gaetan Heirmans",
+      "insta_link": "https://www.instagram.com/gaztou",
+      "cover": "/images/Entertainers/Gaetan Heirmans (Comedy).png",
+      "contentType": "Comedy",
+      "country": "Belgium"
+    },
+    {
+      "id": 36,
+      "name": "Signmark",
+      "insta_link": "https://www.instagram.com/signmarkmusic",
+      "cover": "/images/Artists/Signmark (Artist).png",
+      "contentType": "Artist",
+      "country": "Finland"
+    },
+    {
+      "id": 37,
+      "name": "Ruan du Plessis",
+      "insta_link": "https://www.instagram.com/justruan/",
+      "fb_link": "https://www.facebook.com/ruan.plessis/",
+      "cover": "/images/Entertainers/Ruan du Plessis (Filmmaker).png",
+      "contentType": "Filmmaker",
+      "country": "South Africa"
+    },
+    {
+      "id": 38,
+      "name": "Emma",
+      "insta_link": "https://www.instagram.com/nemakeup9/",
+      "cover": "/images/Artists/Emma (Artist).png",
+      "contentType": "Artist",
+      "country": "America"
+    },
+    {
+      "id": 39,
+      "name": "Kalopsia",
+      "insta_link": "https://www.instagram.com/kalopsia_pescara/",
+      "cover": "/images/Artists/Kalopsia (Artist).png",
+      "contentType": "Artist",
+      "country": "Italy"
+    },
+    {
+      "id": 40,
+      "name": "Hien Nguyen",
+      "insta_link": "https://www.instagram.com/hii_een/",
+      "cover": "/images/Artists/Hien Nguyen (Artist).png",
+      "contentType": "Artist",
+      "country": "Vietnam"
+    },
+    {
+      "id": 41,
+      "name": "Shaylee Mansfield",
+      "insta_link": "https://www.instagram.com/shayleemansfield",
+      "fb_link": "https://www.facebook.com/ShayleeMansfield/",
+      "cover": "/images/Actress/Shaylee Mansfield (Actress).png",
+      "contentType": "Actress",
+      "country": "America"
+    },
+    {
+      "id": 42,
+      "name": "Gavin Lilley",
+      "insta_link": "https://www.instagram.com/gjlilley",
+      "fb_link": "https://www.facebook.com/GavinLilleyComedy/",
+      "cover": "/images/Comedy/Gavin Lilley (Comedy).png",
+      "contentType": "Comedy",
+      "country": "United Kingdom"
+    },
+    {
+      "id": 43,
+      "name": "Deaf Confidence",
+      "insta_link": "https://www.instagram.com/deafconfidence",
+      "fb_link": "https://www.facebook.com/deafconfidence/",
+      "cover": "/images/Engagement/Deaf Confidence.png",
+      "contentType": "Engagement",
+      "country": "America"
+    },
+    {
+      "id": 44,
+      "name": "Signow",
+      "insta_link": "https://www.instagram.com/signoow/",
+      "cover": "/images/Technology/Signow.png",
+      "contentType": "Technology",
+      "country": "Global"
+    },
+    {
+      "id": 45,
+      "name": "David Ruggiero",
+      "insta_link": "https://www.instagram.com/david.investordeaf/",
+      "yt_link": "https://www.youtube.com/@david.investordeaf",
+      "cover": "/images/Education/David Ruggiero (Investor).png",
+      "contentType": "Education",
+      "country": "America"
+    },
+    {
+      "id": 46,
+      "name": "The ASL Shop",
+      "insta_link": "https://www.instagram.com/theaslshop",
+      "cover": "/images/Education/The ASL Shop.png",
+      "contentType": "Education",
+      "country": "America"
+    },
+    {
+      "id": 47,
+      "name": "Mike Hubbs",
+      "insta_link": "https://www.instagram.com/thewiztrades",
+      "cover": "/images/Education/Mike Hubbs (Investor).png",
+      "contentType": "Education",
+      "country": "America"
+    },
+    {
+      "id": 48,
+      "name": "Ashely Clark",
+      "insta_link": "https://www.instagram.com/signedwithheart",
+      "fb_link": "https://www.facebook.com/signedwithheart/",
+      "yt_link": "https://www.youtube.com/c/signedwithheart",
+      "cover": "/images/Education/Ashley Clark (ASL).png",
+      "contentType": "Education",
+      "country": "America"
+    },
+    {
+      "id": 49,
+      "name": "Patrick McMullen",
+      "insta_link": "https://www.instagram.com/thepatrickmcmullen/",
+      "fb_link": "https://www.facebook.com/Patrickmmcmullen/",
+      "cover": "/images/Education/Patrick McMullen.png",
+      "contentType": "Education",
+      "country": "America"
+    },
+    {
+      "id": 50,
+      "name": "Miles Gonzalez",
+      "insta_link": "https://www.instagram.com/milesgonzalezz",
+      "yt_link": "https://www.youtube.com/c/MilesGonzalez",
+      "cover": "/images/Education/Miles Gonzalez (Investor).png",
+      "contentType": "Education",
+      "country": "America"
+    },
+    {
+      "id": 51,
+      "name": "David & Bri",
+      "insta_link": "https://www.instagram.com/signsofgoodfood/",
+      "cover": "/images/Chef/David & Bri.png",
+      "contentType": "Chef",
+      "country": "America"
+    },
+    {
+      "id": 52,
+      "name": "Daniel Beool",
+      "insta_link": "https://www.instagram.com/cookingwithdanielb",
+      "cover": "/images/Chef/Daniel Beool.png",
+      "contentType": "Chef",
+      "country": "America"
+    },
+    {
+      "id": 53,
+      "name": "Deaf Millennial Project",
+      "insta_link": "https://www.instagram.com/deafmillennialproject",
+      "cover": "/images/Religion/Deaf Millennial Project.png",
+      "contentType": "Religion",
+      "country": "America"
+    },
+    {
+      "id": 54,
+      "name": "Freddy Mejia",
+      "insta_link": "https://www.instagram.com/fmejia_03/",
+      "cover": "/images/Influencers/Freddy Mejia.png",
+      "contentType": "Influencer",
+      "country": "America"
+    },
+    {
+      "id": 55,
+      "name": "Hannah Fish",
+      "insta_link": "https://www.instagram.com/deaf.that",
+      "cover": "/images/Influencers/Hannah Fish (Influencer and Comedy).png",
+      "contentType": "Influencer",
+      "country": "America"
+    },
+    {
+      "id": 56,
+      "name": "Diana Van Dso",
+      "insta_link": "https://www.instagram.com/diani.257/",
+      "cover": "/images/Influencers/Diana Van Dso.png",
+      "contentType": "Influencer",
+      "country": "Global"
+    },
+    {
+      "id": 57,
+      "name": "Jeremy Lee Stone",
+      "insta_link": "https://www.instagram.com/jeremy.lee.stone",
+      "yt_link": "https://www.youtube.com/c/JeremyLeeStone",
+      "cover": "/images/Influencers/Jeremy Lee Stone.png",
+      "contentType": "Influencer",
+      "country": "America"
+    },
+    {
+      "id": 58,
+      "name": "Sama Lousiaa",
+      "insta_link": "https://www.instagram.com/samalouisaa/",
+      "yt_link": "https://www.youtube.com/@samalouisaa",
+      "cover": "/images/Influencers/Sama Lousiaa (Lifestyle).png",
+      "contentType": "Lifestyle",
+      "country": "Global"
+    },
+    {
+      "id": 59,
+      "name": "Tassilo Sieben",
+      "insta_link": "https://www.instagram.com/tazkr.tv",
+      "fb_link": "https://www.facebook.com/tassilosieben",
+      "cover": "/images/Influencers/Tassilo Sieben (Storytelling).png",
+      "contentType": "Storytelling",
+      "country": "Germany"
+    },
+    {
+      "id": 60,
+      "name": "Sabia Curiosidade",
+      "insta_link": "https://www.instagram.com/arlindo.madela/",
+      "cover": "/images/Researchers/Sabia Curiosidade (UFO).png",
+      "contentType": "Researcher",
+      "country": "Brazil"
+    }  
 ]
