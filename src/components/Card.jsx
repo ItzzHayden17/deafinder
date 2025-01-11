@@ -26,7 +26,7 @@ const Card = (props) => {
 
         <div className="header">{props.name}</div>
         <div className="img-container">
-        <img src={props.cover} alt="" loading='lazy' />
+        <img src={props.cover} alt="Content creator image" loading='lazy' />
         </div>
         <div className="footer">{props.contentType} {props.favorite ? <i id={props.id} className="bi bi-balloon-heart-fill" onClick={handleFavorite}></i> : <i id={props.id} className="bi bi-balloon-heart" onClick={handleFavorite}></i>}
         </div>
